@@ -6,7 +6,8 @@ Serene uses a highly modular architecture where background extraction logic (lik
 ## Components
 
 ### `ytmusic_server.exe`
-A custom-built Python REST server wrapping `ytmusicapi`. 
+A custom-built Python REST server wrapping the powerful [ytmusicapi](https://github.com/sigma67/ytmusicapi) library. 
+- **Dependencies**: This server is heavily powered by the `ytmusicapi` project to fetch metadata, lyrics, playlists, and manage user history from YouTube Music.
 - **Purpose**: Exposes endpoints for the Serene frontend to perform searches, fetch lyrics, get playlists, and manipulate YouTube Music history.
 - **Port**: Runs locally on `http://127.0.0.1:5050`.
 - **Packaging**: Compiled using PyInstaller for zero-dependency execution on user machines.
